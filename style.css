@@ -15,17 +15,23 @@ body {
     text-align: center;
 }
 
+ul {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
 ul li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
 }
 
 ul li a {
     color: white;
     text-decoration: none;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: bold;
     font-family: CustomFont;
     -webkit-text-stroke: 1px black;
@@ -36,7 +42,8 @@ ul li a:hover {
 }
 
 #headerLogo {
-    margin-top: 350px;
+    margin-top: 150px;
+    width: 95%;
 }
 
 [class*="column-size-"] {
@@ -64,6 +71,7 @@ ul li a:hover {
 }
 
 /*Desktop*/
+
 @media (min-width: 900px) and (orientation: landscape) {
     /*Column Settings*/
     .column-size-1 {width: 8.33%;}
