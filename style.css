@@ -52,48 +52,13 @@ ul li a:hover {
 
 /*Tablet*/
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-    .column-size-1 {width: 8.33%;}
-    .column-size-2 {width: 16.66%;}
-    .column-size-3 {width: 25%;}
-    .column-size-4 {width: 33.33%;}
-    .column-size-5 {width: 41.66%;}
-    .column-size-6 {width: 50%;}
-    .column-size-7 {width: 58.33%;}
-    .column-size-8 {width: 66.66%;}
-    .column-size-9 {width: 75%;}
-    .column-size-10 {width: 83.33%;}
-    .column-size-11 {width: 91.66%;}
-    .column-size-12 {width: 100%;}
-    /*Custom Css*/
-    body {
-        background-image: url("images/background.jpg");
-    }
-}
-
-/*Desktop*/
-
-@media (min-width: 900px) and (orientation: landscape) {
-    /*Column Settings*/
-    .column-size-1 {width: 8.33%;}
-    .column-size-2 {width: 16.66%;}
-    .column-size-3 {width: 25%;}
-    .column-size-4 {width: 33.33%;}
-    .column-size-5 {width: 41.66%;}
-    .column-size-6 {width: 50%;}
-    .column-size-7 {width: 58.33%;}
-    .column-size-8 {width: 66.66%;}
-    .column-size-9 {width: 75%;}
-    .column-size-10 {width: 83.33%;}
-    .column-size-11 {width: 91.66%;}
-    .column-size-12 {width: 100%;}
-
-    /*Custom Css*/
+    /*Custom Css for tablets*/
     body {
         background-image: url("images/background.jpg");
     }
 
     header {
-        margin-top: 200px;
+        margin-top: 10%;
     }
     
     header div {
@@ -103,7 +68,7 @@ ul li a:hover {
     ul li {
         display: block;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 40%;
         padding: 0;
     }
 
@@ -112,7 +77,7 @@ ul li a:hover {
     }
 
     #headerLogo {
-        margin-top: 5%;
+        margin-top: 10%;
         margin-right: 10%;
         width: 40%;
         float: right;
@@ -120,6 +85,20 @@ ul li a:hover {
     
     nav {
         float: left;
+        margin-left: 6%;
+    }
+}
+
+/*Desktop*/
+
+@media (min-width: 900px) and (orientation: landscape) {
+
+    /*Custom Css for desktop*/
+    #headerLogo {
+        margin-top: 5%;
+    }
+    
+    nav {
         margin-left: 8%;
     }
 }
