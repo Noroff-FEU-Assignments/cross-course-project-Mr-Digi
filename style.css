@@ -3,7 +3,10 @@
     font-family: CustomFont;
     src: url("Fonts/Bebas.ttf.woff");
 }
-
+body,html {
+    width: 100%;
+    margin: 0;
+}
 body {
     background-image: url("images/background-mobile.png");
     background-repeat: no-repeat;
@@ -41,7 +44,7 @@ ul li a:hover {
 }
 
 /*Tablet*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (orientation: landscape) {
     .column-size-1 {width: 8.33%;}
     .column-size-2 {width: 16.66%;}
     .column-size-3 {width: 25%;}
@@ -61,7 +64,7 @@ ul li a:hover {
 }
 
 /*Desktop*/
-@media only screen and (min-width: 768px) {
+@media (min-width: 900px) and (orientation: landscape) {
     /*Column Settings*/
     .column-size-1 {width: 8.33%;}
     .column-size-2 {width: 16.66%;}
@@ -81,6 +84,10 @@ ul li a:hover {
         background-image: url("images/background.jpg");
     }
 
+    header {
+        margin-top: 200px;
+    }
+    
     header div {
         display: inline;
     }
@@ -90,7 +97,7 @@ ul li a:hover {
     }
 
     #headerLogo {
-        margin-top: 250px;
+        margin-top: 50px;
         margin-right: 100px;
         float: right;
     }
