@@ -1,3 +1,101 @@
-h1 {
-    color: orange;
+/*Mobile*/
+@font-face {
+    font-family: CustomFont;
+    src: url("Fonts/Bebas.ttf.woff");
+}
+
+body {
+    background-image: url("images/background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #0f262e;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: CustomFont;
+    -webkit-text-stroke: 1px black;
+}
+
+ul li a:hover {
+    color: rgb(162, 162, 162);
+}
+
+#headerLogo {
+    margin-top: 350px;
+}
+
+[class*="column-size-"] {
+    width: 100%;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+    .column-size-1 {width: 8.33%;}
+    .column-size-2 {width: 16.66%;}
+    .column-size-3 {width: 25%;}
+    .column-size-4 {width: 33.33%;}
+    .column-size-5 {width: 41.66%;}
+    .column-size-6 {width: 50%;}
+    .column-size-7 {width: 58.33%;}
+    .column-size-8 {width: 66.66%;}
+    .column-size-9 {width: 75%;}
+    .column-size-10 {width: 83.33%;}
+    .column-size-11 {width: 91.66%;}
+    .column-size-12 {width: 100%;}
+    /*Custom Css*/
+    body {
+        background-image: url("images/background.jpg");
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 768px) {
+    /*Column Settings*/
+    .column-size-1 {width: 8.33%;}
+    .column-size-2 {width: 16.66%;}
+    .column-size-3 {width: 25%;}
+    .column-size-4 {width: 33.33%;}
+    .column-size-5 {width: 41.66%;}
+    .column-size-6 {width: 50%;}
+    .column-size-7 {width: 58.33%;}
+    .column-size-8 {width: 66.66%;}
+    .column-size-9 {width: 75%;}
+    .column-size-10 {width: 83.33%;}
+    .column-size-11 {width: 91.66%;}
+    .column-size-12 {width: 100%;}
+
+    /*Custom Css*/
+    body {
+        background-image: url("images/background.jpg");
+    }
+
+    header div {
+        display: inline;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    #headerLogo {
+        margin-top: 250px;
+        margin-right: 100px;
+        float: right;
+    }
+    
+    nav {
+        float: left;
+    }
 }
