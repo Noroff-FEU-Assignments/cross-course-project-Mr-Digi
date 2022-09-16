@@ -46,6 +46,66 @@ ul li a:hover {
     width: 95%;
 }
 
+#bodyContent {
+    background-color: #0f262e;
+    width: 80%;
+    height: 100%;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#page-title {
+    font-size: 20vw;
+    margin-top: 40%;
+    color: white;
+    font-family: CustomFont;
+    -webkit-text-stroke: 3px black;
+}
+
+#bodyContent h1 {
+    color: white;
+    font-size: 8vw;
+    padding-top: 5%;
+    font-family: CustomFont;
+}
+
+#bodyContent p {
+    color: white;
+    font-family: CustomFont;
+}
+
+#bodyContent #main {
+    font-size: 3vw;
+    margin-top: 5%;
+}
+#bodyContent #secondary {
+    font-weight:lighter;
+    font-size: 1.5vw;
+}
+
+#bodyContent #last {
+    font-size: 1.4vw;
+}
+
+#bodyContent #contact-footer-text {
+    font-weight:lighter;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5vw;
+}
+
+#about-text {
+    font-weight: lighter;
+    font-size: 2vw;
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 [class*="column-size-"] {
     width: 100%;
 }
@@ -82,6 +142,10 @@ ul li a:hover {
         width: 40%;
         float: right;
     }
+
+    #page-title {
+        display: none;
+    }
     
     nav {
         float: left;
@@ -96,6 +160,35 @@ ul li a:hover {
     /*Custom Css for desktop*/
     #headerLogo {
         margin-top: 5%;
+    }
+
+    #bodyContent {
+        width: 40%;
+        margin-right: 30%;
+        margin-top: 5%;
+        padding: 25px;
+        float: right;
+    }
+
+    #bodyContent h1 {
+        font-size: 4vw;
+    }
+
+    #bodyContent #main {
+        font-size: 1vw;
+        margin-top: 5%;
+    }
+    #bodyContent #secondary {
+        font-size: .8vw;
+    }
+
+    #bodyContent #contact-footer-text {
+        margin-top: 5%;
+        font-size: .8vw;
+    }
+
+    #about-text {
+        font-size: .6vw;
     }
     
     nav {
