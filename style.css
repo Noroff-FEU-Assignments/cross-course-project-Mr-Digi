@@ -295,6 +295,10 @@ ul li a:hover {
     #productConfirmed {
         font-size: 1vw;
     }
+
+    #thankyouNote {
+        font-size: .8vw;
+    }
     
     nav {
         margin-left: 8%;
