@@ -275,4 +275,9 @@ input[type=submit] {
         font-size: 30px;
         font-weight: bold;
     }
+
+    #disabledEvent {
+        -webkit-filter: grayscale(100%); /*For safari*/
+        filter: grayscale(100%); /*For expired events*/
+    }
 }
