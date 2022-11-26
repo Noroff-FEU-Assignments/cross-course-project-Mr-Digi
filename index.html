@@ -2,36 +2,101 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Front page for Rainydays">
-    <title>Rainydays</title>
+    <meta name="description" content="Museum of Osteology - FrontPage">
+    <title>Museum of Osteology</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script>
+      function hideMenu() {
+        document.getElementById("mobileMenu").style.display = "none";
+      }
+
+      function showMenu() {
+        document.getElementById("mobileMenu").style.display = "block";
+      }
+      </script>
   </head>
   <body>
-    <div class="column-size-12">
-      <header>
-        <div class="column-size-6">
-          <img id="headerLogo" src="images/logo.png">
-        </div>
-        <div class="column-size-6">
-          <nav>
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="products.html">Jackets</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+    <div class="menu">
+      <button onclick="showMenu()" id="menuShowBtn" type="button">Menu</button>
+      <div id="mobileMenu" class="menuContent">
+        <nav>
+          <button onclick="hideMenu()" id="menuExitBtn" type="button">X</button>
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>EVENTS</li>
+            <li>BLOG</li>
+            <li>BOOKING</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+      </div>
+      <div id="desktopMenu">
+        <nav>
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>EVENTS</li>
+            <li>BLOG</li>
+            <li>BOOKING</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <div class="headerImage">
+      <img id="showcaseImg" src="images/showcase.jpg" alt="">
+      <div class="titleName">Museum of Osteology</div>
+    </div>
+
+    <div class="mainContent">
+      <div class="openHours">
+        <h1>Learn More With Us</h1>
+        <p>Mon-Fri</p>
+        <p>10:00 - 17:00</p>
+      </div>
+      <div class="contentPost">
+        <img src="images/events.jpg" alt="">
+        <p id="post-title">Ancient Species</p>
+        <p id="post-description">Learn about ancient species, and take a look at our full size dinosours</p>
+        <button id="readButton" type="button">Book Now</button>
+      </div>
+
+      <div class="contentPost">
+        <img src="images/humanHistory.jpg" alt="">
+        <p id="post-title">Our History</p>
+        <p id="post-description">Learn more about the human history</p>
+        <button id="readButton" type="button">Book Now</button>
+      </div>
+      
+      <div class="contentPost">
+        <img src="images/events.jpg" alt="">
+        <p id="post-title">Ancient Species</p>
+        <p id="post-description">Learn about ancient species, and take a look at our full size dinosours</p>
+        <button id="readButton" type="button">Book Now</button>
+      </div>
+    </div>
+    <footer>
+      <div id="footerSection">
+        <p id="footer-title">Opening Hours</p>
+        <p id="footerContent">Mon-Fri</p>
+        <p id="footerContent">10:00 - 17:00</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Contact</p>
+        <p id="footerContent">Call: +12 345 67 890</p>
+        <p id="footerContent">Email: bones-museum@bonesmuseum.com</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Location</p>
+        <p id="footerContent">Osteology Road 143</p>
+        <p id="footerContent">Random Place</p>
+        <p id="footerContent">Cool City</p>
+      </div>
+    </footer>
   </body>
 </html>
