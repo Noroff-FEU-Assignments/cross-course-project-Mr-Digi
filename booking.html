@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Museum of Osteology - FrontPage">
+    <title>Museum of Osteology</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script>
+      function hideMenu() {
+        document.getElementById("mobileMenu").style.display = "none";
+      }
+
+      function showMenu() {
+        document.getElementById("mobileMenu").style.display = "block";
+      }
+      </script>
+  </head>
+  <body>
+    <div class="menu">
+      <button onclick="showMenu()" id="menuShowBtn" type="button">Menu</button>
+      <div id="mobileMenu" class="menuContent">
+        <nav>
+          <button onclick="hideMenu()" id="menuExitBtn" type="button">X</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="desktopMenu">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="mainContent">
+        <div class="contactContent">
+          <p id="contact-title">Booking</p>
+          <div class="contactFormContainer">
+            <form>
+              <label for="name">What is your name?</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name..">
+
+              <label for="event">What event do you plan to join?</label>
+              <input type="text" id="event" name="event" placeholder="What is the event you have in mind?">
+
+              <label for="numberComing">How many people are you?</label>
+              <input type="number" id="numberComing" name="numberComing" placeholder="How many people are coming, adults and children">
+
+              <label for="dateandtime">What date would you like?</label>
+              <input type="date" id="dateandtime" name="dateandtime" placeholder="What date fits you the best?">
+
+              <label for="message">Other information we need to know?(disabilities, allergies etc?)</label>
+              <textarea id="message" name="message" placeholder="Additional informaiton here" style="width:100%;height:200px"></textarea>
+
+              <input type="submit" value="Book Now">
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+      <div id="footerSection">
+        <p id="footer-title">Opening Hours</p>
+        <p id="footerContent">Mon-Fri</p>
+        <p id="footerContent">10:00 - 17:00</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Contact</p>
+        <p id="footerContent">Call: +12 345 67 890</p>
+        <p id="footerContent">Email: bones-museum@bonesmuseum.com</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Location</p>
+        <p id="footerContent">Osteology Road 143</p>
+        <p id="footerContent">Random Place</p>
+        <p id="footerContent">Cool City</p>
+      </div>
+    </footer>
+  </body>
+</html>
