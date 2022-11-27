@@ -159,6 +159,16 @@ ul li{
     font-weight: bold;
 }
 
+/*Button config for links*/
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: beige;
+}
+
 /*about css configuration - Mobile*/
 
 #about-title {
@@ -168,6 +178,15 @@ ul li{
 
 #about-text {
     font-size: 30px;
+}
+
+/*Booking confirmation*/
+.confirmedBooking {
+    text-align: center;
+}
+
+.confirmedBooking h2 {
+    margin-bottom: 60px;
 }
 
 /*contact css configuration - Mobile*/
@@ -279,5 +298,20 @@ input[type=submit] {
     #disabledEvent {
         -webkit-filter: grayscale(100%); /*For safari*/
         filter: grayscale(100%); /*For expired events*/
+    }
+
+    /*Booking confirmation*/
+    .confirmedBooking {
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        background-color: beige;
+        height: 400px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .confirmedBooking h2 {
+        margin-bottom: 60px;
     }
 }

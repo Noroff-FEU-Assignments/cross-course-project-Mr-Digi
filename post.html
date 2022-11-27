@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Museum of Osteology - FrontPage">
+    <title>Museum of Osteology</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script>
+      function hideMenu() {
+        document.getElementById("mobileMenu").style.display = "none";
+      }
+
+      function showMenu() {
+        document.getElementById("mobileMenu").style.display = "block";
+      }
+      </script>
+  </head>
+  <body>
+    <div class="menu">
+      <button onclick="showMenu()" id="menuShowBtn" type="button">Menu</button>
+      <div id="mobileMenu" class="menuContent">
+        <nav>
+          <button onclick="hideMenu()" id="menuExitBtn" type="button">X</button>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="desktopMenu">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="mainContent">
+        <div class="aboutContent">
+          <p id="about-title">Post Title Goes Here</p>
+          <img src="images/creatures.jpg" alt="" width="100%">
+          <p id="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et ligula elementum, varius nisl eget, vulputate velit. Phasellus ipsum ante, bibendum lobortis mi vel, pretium dictum nunc. Nulla lacinia, orci a eleifend dignissim, purus tortor efficitur ante, nec posuere ante magna nec metus. Sed convallis nunc nec arcu suscipit, ut pharetra tortor mollis. Mauris sed volutpat ex. Etiam ac metus semper, vulputate massa a, ultricies orci. Praesent varius nisl eget dictum vulputate. Suspendisse a dolor semper, hendrerit nibh posuere, euismod odio. Aliquam ut sem eleifend nibh suscipit viverra. Vestibulum lacinia mauris id purus placerat, eget eleifend dui ultrices. Sed aliquam vel libero fringilla tincidunt. Sed eu lobortis magna, quis porttitor leo. Nulla at tellus non purus finibus efficitur vitae vestibulum turpis. Quisque eu pulvinar erat. Ut interdum ex sit amet turpis gravida, non ornare orci tristique. Morbi id sem quis augue elementum dapibus luctus vel felis.
+            Pellentesque pretium orci sed risus tincidunt, eu iaculis libero accumsan. Nulla gravida gravida congue. Maecenas feugiat et augue non fringilla. Nulla condimentum nulla iaculis varius pulvinar. Morbi luctus metus id lorem placerat ornare sed facilisis diam. Integer vel viverra tellus. Proin vestibulum, sem vel rutrum consequat, enim eros aliquet justo, a porta nisl erat vitae ipsum. Praesent in nisi enim. Donec bibendum porttitor nisl et blandit. In fermentum erat et lectus ultricies pellentesque. Donec risus dui, tempor gravida nibh et, gravida tincidunt magna.
+            Aenean ut tortor eu erat pulvinar venenatis sit amet ultrices ante. Vivamus dolor leo, venenatis non enim in, dapibus gravida erat. Nunc sagittis et dolor id tempor. Etiam vitae ligula consectetur, tincidunt nunc ac, varius odio. Cras rhoncus urna laoreet sem congue, ut molestie orci ultricies. Nunc fringilla magna et ligula tincidunt sollicitudin. Curabitur ut pellentesque lacus, quis aliquet ex. Cras pulvinar ipsum eget fringilla interdum. Proin rhoncus massa eu metus fermentum volutpat. Praesent efficitur, est at mattis congue, nisl felis euismod dui, at elementum neque mauris et lectus. Donec sed blandit ex.</p>
+        </div>
+    </div>
+
+    <footer>
+      <div id="footerSection">
+        <p id="footer-title">Opening Hours</p>
+        <p id="footerContent">Mon-Fri</p>
+        <p id="footerContent">10:00 - 17:00</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Contact</p>
+        <p id="footerContent">Call: +12 345 67 890</p>
+        <p id="footerContent">Email: bones-museum@bonesmuseum.com</p>
+      </div>
+
+      <div id="footerSection">
+        <p id="footer-title">Location</p>
+        <p id="footerContent">Osteology Road 143</p>
+        <p id="footerContent">Random Place</p>
+        <p id="footerContent">Cool City</p>
+      </div>
+    </footer>
+  </body>
+</html>
